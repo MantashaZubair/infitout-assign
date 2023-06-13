@@ -11,47 +11,47 @@ const Header = () => {
 
   return (
     <div className="container">
-      <div className="mt-4 d-flex flex-row">
+      <div className="mt-4 d-flex flex-lg-row  flex-column">
         <input type="text" className="py-1" value={stike} onChange={(e)=>{setStike(e.target.value)}} />
-        <input type="text" className="ms-2 py-1" value={exp} onChange={(e)=>{setExp(e.target.value)}}/>
+        <input type="text" className="ms-lg-2 ms-0 mt-lg-0 mt-2 py-1" value={exp} onChange={(e)=>{setExp(e.target.value)}}/>
 
-        <span className="ms-3">
+        <span className="ms-lg-3 ms-0">
           <span className="text-secondary">Spot</span>
           <h6 className="text-dark">
-            180000.0 <span className="text-success ms-2">0.36%</span>
+            180000.0 <span className="text-success ms-lg-2 ms-0">0.36%</span>
           </h6>
         </span>
         <span className="ms-3">
           <span className="text-secondary">Fut</span>
           <h6 className="text-dark">
-            180000.0 <span className="text-success ms-2">0.36%</span>
+            180000.0 <span className="text-success ms-lg-2 ms-0">0.36%</span>
           </h6>
         </span>
-        <span className="ms-5">
+        <span className="ms-lg-5 ms-0">
           <span className="text-secondary">Max pain</span>
           <h6 className="text-dark">180000</h6>
         </span>
-        <span className="ms-3">
+        <span className="ms-lg-3 ms-0">
           <span className="text-secondary">PCR</span>
           <h6 className="text-dark">0.92</h6>
         </span>
-        <span className="ms-3">
+        <span className="ms-lg-3 ms-0">
           <span className="text-secondary">Support </span>
           <h6 className="text-dark">1810</h6>
         </span>
-        <span className="ms-3">
+        <span className="ms-lg-3 ms-0">
           <span className="text-secondary">Support </span>
           <h6 className="text-dark">0.92</h6>
         </span>
 
-        <span className="ms-5 mt-2">
+        <span className="ms-lg-5 ms-0 mt-2">
           <span className="text-dark ms-4" onClick={toggleShowA}>
             <BiFilter className="me-1 fs-4" />
             Filters{" "}
           </span>
         </span>
 
-        <span className="ms-5">
+        <span className="ms-lg-5 ms-0  mt-2 mt-lg-0">
           <button
             type="button"
             className="btn btn-primary position-relative px-4"
