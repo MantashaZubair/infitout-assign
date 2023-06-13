@@ -5,11 +5,15 @@ import Button from "react-bootstrap/Button";
 const Header = () => {
   const [showA, setShowA] = useState(false);
   const toggleShowA = () => setShowA(!showA);
+  const [ stike,setStike] = useState("Netify")
+  const [ exp,setExp] = useState(" 18 May 2023")
+  
+
   return (
     <div className="container">
       <div className="mt-4 d-flex flex-row">
-        <input type="text" className="py-1" value={"Netify"} />
-        <input type="text" className="ms-2 py-1" value={" 18 May 2023"} />
+        <input type="text" className="py-1" value={stike} onChange={(e)=>{setStike(e.target.value)}} />
+        <input type="text" className="ms-2 py-1" value={exp} onChange={(e)=>{setExp(e.target.value)}}/>
 
         <span className="ms-3">
           <span className="text-secondary">Spot</span>

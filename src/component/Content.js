@@ -58,9 +58,9 @@ const Content = () => {
             </tr>
           </thead>
           <tbody className="tableContainerDiv">
-            {ContentData.map((item) => {
+            {ContentData.map((item,id) => {
               return (
-                <tr>
+                <tr key={id}>
                   <td className="table-warning">{item.Buildup}</td>
                   <td className="table-warning">{item.IV}</td>
                   <td className="table-warning">{item.OI}</td>
